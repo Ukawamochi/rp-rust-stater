@@ -1,7 +1,12 @@
 [package]
-name = "y3-yu1hpa"
+name = "rp-rust-starter"
 version = "0.1.0"
 edition = "2021"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+test = false
 
 [dependencies]
 cortex-m = "0.7.5"
@@ -13,3 +18,4 @@ rp-pico = "0.9.0"
 defmt = "1.0.1"
 defmt-rtt = "1.0.0"
 embedded-hal = "1.0.0"
+
