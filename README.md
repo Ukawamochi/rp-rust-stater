@@ -5,7 +5,7 @@
 ###　特徴
 - defmt::printnに対応!
 - probe-rsでデバックと書き込み可能!
-- LチカでClone+F5で動作確認!
+- Clone+F5で動作確認!すぐLチカとdefmtが始まります。
 
 ```sh
 $ cargo build
