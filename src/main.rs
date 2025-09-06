@@ -4,17 +4,9 @@
 use defmt_rtt as _;
 use panic_probe as _;
 use cortex_m_rt::entry;
-// Import HAL traits and timer delay
-use rp_pico::hal::prelude::*;
-use embedded_hal::blocking::delay::DelayMs;
-use rp_pico::hal::{
-    clocks::init_clocks_and_plls,
-    pac,
-    sio::Sio,
-    watchdog::Watchdog,
-    gpio::Pins,
-    timer::Timer,
-};
+use rp_pico::hal::{pac, clocks::init_clocks_and_plls, sio::Sio, watchdog::Watchdog, gpio::Pins, timer::Timer};
+use embedded_hal::digital::OutputPin;
+use embedded_hal::delay::DelayMs;
 
 #[entry]
 fn main() -> ! {
