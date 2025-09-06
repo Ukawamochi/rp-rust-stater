@@ -585,6 +585,7 @@ dependencies = [
 name = "y3-yu1hpa"
 version = "0.1.0"
 dependencies = [
+ "cortex-m",
  "cortex-m-rt",
  "defmt 1.0.1",
  "defmt-rtt",
